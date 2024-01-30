@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formdiv{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    background: white;
+    height: 30rem;
+}
+.fillform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-top: 60px;
+    height: 25rem;
+    background: bisque;
+}
+.signindata{
+    margin-bottom: 20px;
+}
+.btnsubmit{
+    background: transparent;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 10px;
+}

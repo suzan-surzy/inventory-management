@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containerdiv{
+    height: 20rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background: pink; */
+}
+.product{
+    font-size: 40px;
+    margin: 20px 400px 0 400px;
+    font-family: sans-serif;
+}
+.formcontrol{
+    padding: 10px;
+    margin: 10px;
+}
+
+@media(max-width:990px) and (min-width:711px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media(max-width:710px) and (min-width:467px) {
+    .container{
+       max-width: 540px;
+    }
+    .product{
+        font-size: 40px;
+        margin: 15px 20px 0 20px;
+        font-family: sans-serif;
+    }
+    /* .tablediv{
+        height: 100rem;
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    } */
+}

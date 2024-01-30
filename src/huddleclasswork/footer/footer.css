@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    background: rgb(3, 22, 22);
+    margin-top: 30px;
+    height: 15rem;
+    padding: 30px;
+}
+.ready{
+    width: 35%;
+    height: 8rem;
+    position: relative;
+    left: 400px;
+    top:  50px;
+    padding-top: 20px;
+    padding-left: 80px;
+    background: white;
+    border-radius: 20px;
+}
+.ready h2{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 15px;
+}
+.ready button{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    background: palevioletred;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.join{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.footerimage img{
+    padding-left: 40px;
+}
+.joindiv{
+    padding: 20px;
+}
+.location{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.phone{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.email{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.about p{
+   padding-bottom: 20px;
+}
+.blog p{
+    padding-bottom: 20px;
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.youruser{
+   display: flex;
+   padding: 40px;
+   margin-top: 20px;
+   background: white;
+   border-radius: 20px;
+}
+.user img{
+   height: 20rem;
+}
+.your{
+    margin-top: 60px;
+}
+.your p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: larger;
+}
+.your h1{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flowconversation{
+    display: flex;
+    padding: 40px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 20px;
+}
+.flow img{
+   height: 25rem;
+}
+.conversation{
+    margin-top: 60px;
+}
+.conversation p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    font-size: 20px;
+}
+.conversation h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}

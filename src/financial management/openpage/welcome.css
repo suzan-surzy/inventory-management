@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+/* .body{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    background: black;
+    height: 40rem;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 40px;
+    height: 30rem;
+    background: crimson;
+}
+.text{
+    font-size: 70px;
+    font-family: fantasy;
+    color: white;
+    padding: 10px;
+    
+}
+.landingimage{
+    height: 10rem;
+    border-radius: 25px;
+}
+button{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px;
+    background: greenyellow;
+} */

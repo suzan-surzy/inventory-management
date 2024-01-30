@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-image: url(../images/bg-hero-desktop.svg );
+    height: 33rem;
+}
+.imagelogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+}
+.btn{
+    border-radius: 20px;
+    padding: 10px;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.seperate{
+    display: flex;
+    margin-top: 10px;
+    padding: 30px;
+}
+.mockup img{
+    height: 20rem;
+    padding-right: 40px;
+}
+.build{
+    margin-top: 70px;
+}
+.build p{
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.build button{
+    margin: 5px 10px 20px 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background: palevioletred;
+}
+.build h1{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}

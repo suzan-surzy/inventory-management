@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    background: whitesmoke;
+    height: 5rem;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 30px 0 10px;
+}
+.menu-toggle {
+   font-size: 1.5rem;
+   cursor: pointer;
+   display: none;
+}
+  
+.nav-list {
+   list-style: none;
+   display: flex;
+   margin-top: 10px;
+   
+}
+.signin{ 
+    padding-bottom: 20px;
+    height: 5rem;
+}
+.nav-list li {
+   margin: 10px 10px;
+   margin-top: 20px;
+}
+  
+.nav-list a {
+   text-decoration: none;
+   transition: .5s;
+   color: black;
+   font-size: larger;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 10px;
+}
+li a:hover{
+    transition: .5s;
+    color: brown;
+    font-size: 20px;
+    font-family: fantasy;
+}
+.kidologo{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    padding: 10px;
+    margin-top: 13px;
+}
+.signinimage{
+    height: 2rem;
+}
+
+
+.inventory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  rgba(128, 0, 58,0.8);
+    height: 30rem;
+    margin: 0 20px 0 20px;
+}
+.paragraph{
+    padding: 40px;
+    color: white;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.goodsrecord{
+    display: flex;
+    gap: 80px;
+    margin: 0 60px 0 60px;
+    margin-top: 90px;
+    padding: 20px;
+    height: 25rem;
+    background-color: blue;
+    border-top-right-radius: 90%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.productimage{
+    height: 26rem;
+    display: flex;
+    margin: 20px;
+    background: purple;
+    padding: 30px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.logoimage{
+    height: 22rem;
+    border-radius: 20px;
+}
+.inventoryimage{
+    height: 18rem;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.inventoryparagraph{
+    padding: 20px;
+    margin-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.logoparagraph{
+    padding: 20px;
+    margin-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+footer{
+    height: 23rem;
+    margin-top: 40px;
+    background: white;
+}
+.footerlogo{
+    height: 5rem;
+    font-family: fantasy;
+    color: brown;
+    padding: 30px;
+    margin: 0 20px 0 20px;
+}
+.footerdiv{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 12rem;
+}
+.contact{
+    margin-top: 30px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.policy{
+    margin-top: 20px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.service{
+    margin: 10px;
+}
+.privacy{
+    margin: 10px;
+}
+.cookie{
+    margin: 10px;
+}
+.connectus{
+    display: flex;
+    flex-direction: column;
+}
+.facebook{
+    height: 4rem;
+    border-radius: 15px;
+}
+.whatsapp{
+    height: 4rem;
+    border-radius: 15px;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.signoutlink{
+    text-decoration: none;
+    color: black;
+}
+.signoutlink:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+.web{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    gap: 10px;
+}
+
+
+@media(max-width:710px) and (min-width:467px) {
+    .container{
+       max-width: 540px;
+    }
+    
+    .menu-toggle {
+        display: block;
+        margin-top: 17px;
+        border-radius: 5px;
+      }
+    
+      .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        height: 20rem;
+        left: 0;
+        width: 100%;
+        background-color: bisque;
+        transition: all .5s;
+        text-align: center;
+      }
+   
+      .nav-list.show {
+        display: flex;
+      }
+      .nav-list li {
+        margin: 13px;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: larger;
+       color: black;
+     }
+       
+     /* .nav-list a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+     } */
+     li a:hover{
+         transition: .5s;
+         color: blue;
+         cursor: pointer;
+     }
+    .signinimage{
+        display: none;
+    }
+    .inventory{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background:  rgba(128, 0, 58,0.8);
+        height: 25rem;
+    }
+    .paragraph{
+        padding: 15px;
+        color: white;
+        font-size: 40px;
+    }
+    .goodsrecord{
+        height: 27rem;
+        margin: 0 10px 0 10px;
+        margin-top: 10px;
+        gap: 5px;
+        background: rebeccapurple;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logoimage{
+        height: 17rem;
+    }
+    .productimage{
+        height: 25rem;
+        display: flex;
+        margin: 10px;
+        background: purple;
+        padding: 30px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .inventoryimage{
+        height: 15rem;
+    }
+    .inventoryparagraph{
+        padding: 10px;
+        margin-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    .service{
+        display: none;
+    }
+    .privacy{
+        display: none;
+    }
+    .cookie{
+        display: none;
+    }
+    .logoparagraph{
+        padding: 20px;
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    .copyright{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 20px 10px 20px;
+    }
+    .signoutlink{
+        text-decoration: none;
+        color: black;
+        /* padding: 10px; */
+    }
+}
+
+@media(max-width:990px) and (min-width:711px){
+    .container{
+        max-width: 720px;
+    }
+    .menu-toggle {
+        display: block;
+        margin-top: 18px;
+        border-radius: 3px;
+      }
+    
+      .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        height: 20rem;
+        left: 0;
+        width: 50%;
+        background-color: navy;
+        transition: all .5s;
+        text-align: center;
+      }
+   
+      .nav-list.show {
+        display: flex;
+      }
+      .nav-list li {
+        margin: 13px;
+     }
+       
+     .nav-list a {
+        text-decoration: none;
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+     li a:hover{
+         transition: .5s;
+         background: red;
+         font-size: larger;
+         padding: 10px;
+         color: white;
+         border-radius: 10px;
+     }
+    .signinimage{
+        display: none;
+    }
+    .inventory{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background:  white;
+        height: 25rem;
+    }
+    .paragraph{
+        padding: 10px;
+        color: brown;
+        font-size: 50px;
+    }
+    .goodsrecord{
+        height: 20rem;
+        /* margin-top: 10px; */
+        background: red;
+        margin: 0 10px 0 10px;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .productimage{
+        height: 24rem;
+        display: flex;
+        margin: 10px;
+        background: brown;
+        padding: 30px;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .logoimage{
+        height: 15rem;
+    }
+    .inventoryimage{
+        height: 13rem;
+    }
+    .inventoryparagraph{
+        padding: 20px;
+        margin-top: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    .logoparagraph{
+        padding: 20px;
+        margin-top: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    .web{
+        display: flex;
+        justify-content: space-evenly;
+        height: 10rem;
+        /* gap: 10px; */
+    }
+}
+
+@media(max-width:1200px) and (min-width:989px){
+    .container{
+        max-width: 1140px;
+    }
+}

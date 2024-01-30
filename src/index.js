@@ -1,17 +1,53 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import APP from './APP'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// class Color extends React.Component{
+//   constructor(){
+//     super();
+//     this.state = {color : "red"}
+//   }
+//   colourChange = () => {
+//     this.setState({color : this.state.color ==='red' ? 'blue':'green'})
+//   }
+
+//   render(){
+//     return(
+//       <div>
+//       <p style={{backgroundColor:this.state.color, height:'50px'}}></p>
+//       <button onClick={this.colourChange}>change color</button>
+//       </div>
+//     )
+//   }
+// }
+
+// class Studentlist extends React.Component{
+//   constructor(){
+//     super();
+//     this.state = {
+//       student:[
+//         {nameF :"john",id : 2874,grade :"A"},
+//       {nameF :"alice",id : 2876,grade :"B"},
+//       {nameF :"joe",id : 2877,grade :"C"},
+//       ]
+//     }
+      
+//   }
+//   render(){
+//     return(
+//       <div>
+//       <p>{ this.state.student.name}</p>
+//     </div>
+//     )
+//   }
+// }
+
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+// root.render(<Color/>)
+// root.render(<Studentlist/>)
+root.render(<APP />);
+// root.render(<MovieGallery />);

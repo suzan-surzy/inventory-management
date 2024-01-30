@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.productlist{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    margin: 40px 400px 0 400px;
+}
+
+@media(max-width:990px) and (min-width:711px){
+    .container{
+        max-width: 720px;
+    }
+    .productlist{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 35rem;
+    }
+}
+
+@media(max-width:710px) and (min-width:467px) {
+    .container{
+       max-width: 540px;
+    }
+    .productlist{
+        margin: 30px;
+        height: 20rem;
+    }
+    
+}

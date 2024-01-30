@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* margin-bottom: 400rem; */
+    height: 30rem;
+    /* background: red; */
+}
+.return{
+    height: 20rem;
+    /* background-color: aqua; */
+   
+ 
+   
+}
+
+.title{
+    margin: 5px;
+    font-size: large;
+    font-family: fantasy;
+    padding: 10px;
+   
+}
+form{
+    margin-top: 20px;
+}
+
+.current{
+    margin-bottom: 10px;
+    background: transparent;
+    font-size: small;
+    padding: 15px;
+}
+.amount{
+    margin-bottom: 10px;
+    background: transparent;
+    font-size: small;
+    padding: 15px;
+}
+.tittle{
+    margin-bottom: 10px;
+    background: transparent;
+    font-size: small;
+    padding: 15px;
+}
+.target{
+    margin-bottom: 10px;
+    background: transparent;
+    font-size: small;
+    border: 1px groove red;
+    padding: 15px;
+}
+.buttonbtn{
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: larger;
+    font-family: fantasy;
+    margin-top: 30px;
+}
+
+.targetamount{
+    margin: 10px;
+    font-size: large;
+    font-family: fantasy;
+
+}
+.currentamount{
+    margin: 10px;
+    font-size: large;
+    font-family: fantasy;
+}
+
+.progress{
+    margin: 10px;
+    font-size: large;
+    font-family: fantasy;
+}
+
+.targetdate{
+    margin: 10px;
+    font-size: large;
+    font-family: fantasy;
+}
