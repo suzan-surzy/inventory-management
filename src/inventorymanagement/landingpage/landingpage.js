@@ -5,8 +5,8 @@ import LOGO from '../image/inventoryimage.webp'
 import { Link } from "react-router-dom";
 import USERICON from '../image/user icon.png'
 import INVENTORY from '../image/downloadinventory.jfif'
-import FACEBOOK from '../image/Facebookicon.png'
-import WHATSAPP from '../image/whatsappicon.jfif'
+import FACEBOOK from '../image/facebook.png'
+import WHATSAPP from '../image/whatsapp.jfif'
 import HUMBURGER from '../image/humburger.png'
 
 
@@ -22,19 +22,19 @@ export default function LandingPage() {
           <Row>
            
           <nav>
-    <h1 className="kidologo">kido inventory</h1>
-    <div className="menu-toggle"  onClick={toggleMenu}><img style={{height:'4rem'}} src={HUMBURGER} alt=""/></div>
-    <ul className={`nav-list ${showMenu ? 'show' : ''}`}>
-        <li><Link to="/addproduct" >add product</Link></li>
-        <li><Link to="/removeproduct" >ProductDetail</Link></li>
-        <li><Link to="/signup" >Signup</Link></li>
-        <li><Link to="/" >feedback</Link></li>
-        <li className="signin">
-            <img className="signinimage" src={USERICON} alt=""/>
-            <Link to="/signin" >Signin</Link>
-        </li>
-    </ul>
-</nav>
+            <h1 className="kidologo">kido inventory</h1>
+            <div className="menu-toggle"  onClick={toggleMenu}><img style={{height:'4rem'}} src={HUMBURGER} alt=""/></div>
+            <ul className={`nav-list ${showMenu ? 'show' : ''}`}>
+                <li><Link to="/" >Home</Link></li>
+                <li><Link to="/addproduct" >Add product</Link></li>
+                <li><Link to="/removeproduct" >Dashboard</Link></li>
+                <li><Link to="/signup" >Signup</Link></li>
+                <li className="signin">
+                    <img className="signinimage" src={USERICON} alt=""/>
+                    <Link to="/signin" >Signin</Link>
+                </li>
+            </ul>
+        </nav>
            <div className="inventory">
               <h2 className="paragraph">The world is your marketplace,Manage and fillful orders on a go.</h2>
             </div>
@@ -66,9 +66,9 @@ export default function LandingPage() {
                   <h1 className="footerlogo">Kido inventory</h1>
                   <div className="footerdiv">
                    <div className="contact">
-                       <p style={{marginBottom:'10px'}}>Email -kidoinventory@gmail.com</p>
+                       <p style={{marginBottom:'10px'}}>Email - kidoinventory@gmail.com</p>
                        <p style={{marginBottom:'10px'}}>Contact - 09025356723</p>
-                       <p>blog</p>
+                       <p>blogs</p>
                    </div>
                    <div className="policy">
                      <p className="privacy">blog</p>
@@ -84,7 +84,7 @@ export default function LandingPage() {
                    </div>
                   </div>
                   <div className="copyright">
-                     <h2><Link to="/" className="signoutlink" >Signout</Link></h2>
+                     <h2><Link to="/signout" className="signoutlink" >Signout</Link></h2>
                      <h3>© 2024, Kido Inventory Ltd. All Rights Reserved</h3>
                   </div>
                 </footer>

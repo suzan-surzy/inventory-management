@@ -1,8 +1,8 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 .formdiv{
     display: flex;
     flex-direction: column; 
@@ -11,11 +11,30 @@
     background: white;
     height: 30rem;
 }
+.error-message{
+    color: red;
+    font-size: smaller;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 8px;
+}
+.signinparagraph{
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+.signinparagraph a{
+    text-decoration: none;
+    margin: 5px;
+}
+.signinparagraph a:hover{
+    text-decoration: underline;
+}
 .fillform{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
     width: 40%;
     margin-top: 60px;
     height: 25rem;
@@ -31,3 +50,26 @@
     font-size: large;
     padding: 10px;
 }
+
+@media(max-width:710px) and (min-width:347px) {
+    .container{
+       max-width: 540px;
+    }
+    .formdiv{
+        display: flex;
+        /* flex-direction: column;  */
+        justify-content: center;
+        align-items: center; 
+        background: white;
+        height: 28rem;
+    }
+    .fillform{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 80%;
+        margin-top: 60px;
+        height: 25rem;
+        background: bisque;
+    }
+}    

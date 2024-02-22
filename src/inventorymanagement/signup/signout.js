@@ -1,30 +1,21 @@
-// import React from 'react';
-
-// export default function Logoutout({ user, onLogout }) {
-//   return (
-//     <div>
-//       <p>Welcome, {user.username}!</p>
-//       <button onClick={onLogout}>Logout</button>
-//     </div>
-//   );
-// }
-
-import { useLocation } from 'react-router-dom';
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './signout.css'
 export default function Signout() {
-  // Access the location object using useLocation
-  const location = useLocation();
 
-  // Extract information from the location object
-  const { pathname, search, hash } = location;
+  const handleSignOut = () => {
+    sessionStorage.removeItem('email');
+    sessionStorage.removeItem('password');
+    // console.log(sessionStorage);
+  };
 
+  // In your component, add a button or link to trigger the sign-out
   return (
-    <div>
-      <h2>Current Location:</h2>
-      <p>Pathname: {pathname}</p>
-      <p>Search: {search}</p>
-      <p>Hash: {hash}</p>
+    <div className='signout'>
+      <h1>Good Bye</h1>
+      <Link to='/' onClick={handleSignOut}>Sign Out</Link>
+      
     </div>
+    
   );
 }
- 

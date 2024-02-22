@@ -1,39 +1,57 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 .detail{
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center; 
-    height: 35rem;
+    height: 47rem;
+}
+.formparagraph{
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+.formparagraph a{
+    text-decoration: none;
+    margin: 5px;
+}
+.formparagraph a:hover{
+  text-decoration: underline;
 }
 .formdetail{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    padding: 10px 20px 20px 20px;
     align-items: center;
     width: 40%;
-    /* margin-top: 20px; */
+    margin-top: 20px;
     border: 1px solid black;
     border-radius: 5px;
-    height: 30rem;
+    height: 44rem;
     background: rgba(196, 218, 255, 0.866);
 }
 .signupheader{
+    margin-top: 15px;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 label{
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
     font-size: larger;
+    display: flex;
+    flex-direction: column;
 }
 .inputdata{
     outline: none;
     border: 1px solid brown;
     padding: 20px;
+    width: 100%;
     border-radius: 10px;
     height: 30px;
     background: white;
@@ -41,9 +59,10 @@ label{
 .submit{
     text-decoration: none;
     padding: 10px;
+    width: 50%;
     background: wheat;
     font-size: larger;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
 }
 .signuplink{
@@ -54,12 +73,21 @@ label{
     .container{
         max-width: 720px;
     }
+    .detail{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        height: 49rem;
+    }
     .formdetail{
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
         border: 1px solid black;
         border-radius: 5px;
-        height: 30rem;
+        padding: 25px;
+        height: 39rem;
         background: rgba(196, 218, 255, 0.866);
     }
 }
@@ -68,13 +96,22 @@ label{
     .container{
        max-width: 540px;
     }
+    .detail{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        padding: 40px;
+        height: 40rem;
+    }
     .formdetail{
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 30px;
         border: 1px solid black;
         border-radius: 5px;
-        height: 35rem;
+        height: 38rem;
+        width: 100%;
         margin-top: 20px;
         background: rgba(196, 218, 255, 0.866);
     }

@@ -8,8 +8,34 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
-    /* background: pink; */
 }
+
+.containertable{
+    background-color: burlywood;
+    height: 5rem;
+    width: 40%;
+    margin-top: 40px;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    border: 2px solid purple;
+    border-radius: 10px;
+}
+.containertable thead{
+    margin-top: 40px;
+    height: 2rem;
+    color: #fff;
+    background: purple;
+}
+.containertable thead tr th{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containertable tbody tr td{
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
 .product{
     font-size: 40px;
     margin: 20px 400px 0 400px;
@@ -24,6 +50,23 @@
     .container{
         max-width: 720px;
     }
+    .product{
+        font-size: 30px;
+        margin: 20px 300px 10px 300px;
+        font-family: sans-serif;
+    }
+    .containerdiv{
+        height: 20rem;
+        margin-top: 15px;
+        padding: 0 15px 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* .containerdiv{
+        margin: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    } */
 }
 
 @media(max-width:710px) and (min-width:467px) {
@@ -35,11 +78,13 @@
         margin: 15px 20px 0 20px;
         font-family: sans-serif;
     }
-    /* .tablediv{
-        height: 100rem;
-        margin-top: 70px;
+    .containerdiv{
         display: flex;
+        height: 50rem;
+        padding-bottom: 300px;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-    } */
+    }
+    .containertable{
+        margin-top: 20px;
+    }
 }

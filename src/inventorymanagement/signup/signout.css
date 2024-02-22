@@ -1,0 +1,29 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.signout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: blue;
+    max-width: 30%;
+    font-size: 30px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 350px;
+    flex-wrap: wrap;
+    top: 70px;
+    border-radius: 10px;
+    height: 20rem;
+}
+.signout a{
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+}
+.signout a:hover{
+    text-decoration: underline white;
+}
