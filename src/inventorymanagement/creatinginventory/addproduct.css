@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 .containerdiv{
-    height: 20rem;
+    height: 30rem;
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap;
+    padding:  0 20px 0 20px;
     justify-content: space-evenly;
 }
 
@@ -22,6 +24,7 @@
 }
 .containertable thead{
     margin-top: 40px;
+    width: 60%;
     height: 2rem;
     color: #fff;
     background: purple;
@@ -38,7 +41,9 @@
 
 .product{
     font-size: 40px;
-    margin: 20px 400px 0 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
     font-family: sans-serif;
 }
 .formcontrol{
@@ -52,11 +57,10 @@
     }
     .product{
         font-size: 30px;
-        margin: 20px 300px 10px 300px;
         font-family: sans-serif;
     }
     .containerdiv{
-        height: 20rem;
+        height: 30rem;
         margin-top: 15px;
         padding: 0 15px 0 15px;
         display: flex;
@@ -75,13 +79,13 @@
     }
     .product{
         font-size: 40px;
-        margin: 15px 20px 0 20px;
         font-family: sans-serif;
     }
     .containerdiv{
         display: flex;
-        height: 50rem;
-        padding-bottom: 300px;
+        height: 30rem;
+        padding: 0 70px 0 70px;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .containertable{

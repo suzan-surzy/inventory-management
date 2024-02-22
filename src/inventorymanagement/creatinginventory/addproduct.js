@@ -100,22 +100,22 @@ setNewItem({
                   <h1 className="product">Product List</h1>
                     <div className="containerdiv">
                         <Form >
-                            <label style={{padding:'10px'}} >product name : 
+                            <label style={{padding:'10px'}} >Product name : 
                             <input type="text" className="formcontrol" name="productName" value={newItem.productName} onChange={handleInputChange} required />
                             </label>
                             <br />
-                            <label style={{padding:'10px'}} >quantity : 
+                            <label style={{padding:'10px'}} >Quantity : 
                             <input type="number" className="formcontrol" name="productQuantity" value={newItem.productQuantity} onChange={handleInputChange} required />
                             </label>
                             <br />
-                            <label style={{padding:'10px'}} >price : 
+                            <label style={{padding:'10px'}} >Price : 
                             <input type="number" className="formcontrol" name="productPrice" value={newItem.productPrice} onChange={handleInputChange} required />
                             </label>
                             <br/>
-                            <button style={{padding:'10px',margin:'20px'}} type="button" onClick={handleAddProduct}>
-                                add
+                            <button  style={{padding:'10px',margin:'10px 5px 10px 5px'}} type="button" onClick={handleAddProduct}>
+                                Add
                             </button>
-                            <button style={{padding:'10px',margin:'20px'}} type="submit" onClick={saveProductsToLocal}>Save to Local Storage</button>
+                            <button style={{padding:'10px',margin:'10px 5px 10px 5px'}} type="submit" onClick={saveProductsToLocal}>Save to Local Storage</button>
                         </Form>
 
                         
@@ -124,7 +124,7 @@ setNewItem({
                               <tr>
                                 <th>S/N</th>
                                 <th>Name</th>
-                                <th>quantity</th>
+                                <th>Quantity</th>
                                 <th>Price</th>
                               </tr>
                             </thead>
