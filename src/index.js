@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import APP from './APP'
+import  './App.js';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -45,9 +45,7 @@ import APP from './APP'
 // }
 
 
-const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
-// root.render(<Color/>)
-// root.render(<Studentlist/>)
-root.render(<APP />);
-// root.render(<MovieGallery />);
+// const container = document.getElementById('root');
+// const root = ReactDOM.createRoot(container);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App/>);
