@@ -4,10 +4,11 @@
  import Card from 'react-bootstrap/Card';
  import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import FACEBOOK from '../image/facebook.png'
-import WHATSAPP from '../image/whatsapp.jfif'
+import FACEBOOK from '../image/facebook1.svg'
+import WHATSAPP from '../image/whatsapp1.svg'
 import USERICON from '../image/user icon.png'
 import HUMBURGER from '../image/humburger.png'
+import TWITTER from '../image/twitter1.svg'
 
 
 export default function RemoveProduct() {
@@ -16,6 +17,40 @@ export default function RemoveProduct() {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+  const checkProductAvailability = (productId) => {
+    const productExists = products.some(product => product.id === productId);
+  
+    if (productExists) {
+      alert("Product is available in your inventory.");
+    } else {
+      alert("Product not found in your inventory.");
+    }
+  };
+  // ...
+
+const handleDeleteProduct = (productId) => {
+  // Check if the product exists
+  const productToDelete = products.find(product => product.id === productId);
+
+  if (!productToDelete) {
+    // Product not found
+    alert("Product not found");
+    return;
+  }
+
+  // Ask for confirmation before deletion
+  const confirmDelete = window.confirm(`Are you sure you want to delete ${productToDelete.productName}?`);
+
+  if (confirmDelete) {
+    // Delete the product
+    const updatedProducts = products.filter(product => product.id !== productId);
+    setProducts(updatedProducts);
+    saveProductsToLocal(updatedProducts);
+  }
+};
+
+// ...
+
    const [products, setProducts] = useState(JSON.parse(localStorage.getItem('saveditem')));
   console.log(products)
 
@@ -29,12 +64,12 @@ export default function RemoveProduct() {
   const calculateTotalPrice = () => {
     return products.reduce((total, product) => total + parseInt(product.productPrice), 0);
   };
-  const handleDeleteProduct = (productId) => {
-    const updatedProducts = products.filter(product => product.id !== productId);
+  // const handleDeleteProduct = (productId) => {
+  //   const updatedProducts = products.filter(product => product.id !== productId);
 
-    setProducts(updatedProducts);
-    saveProductsToLocal(updatedProducts);
-  };
+  //   setProducts(updatedProducts);
+  //   saveProductsToLocal(updatedProducts);
+  // };
   // Function to handle increasing the quantity of a product
   const handleAdjustProduct = (productId, operation) => {
     const updatedProducts = products.map(product => {
@@ -74,31 +109,39 @@ export default function RemoveProduct() {
       </Row>
 
       <Row>
+         <Col>
               <div className='productlist'>
-              <Col>
-                <h1>Welcome To Your Dashboard</h1>
+                <h1 className="itemh1">Welcome To Your Dashboard</h1>
                   <div className='carddiv'>
-                  <Card style={{ height: '15rem', backgroundColor: 'blue',display:'flex',justifyContent:'center',alignItems:'center', width: '90%', borderRadius: '10px' }}>
+                  <Card 
+                  style={{ height: '15rem', backgroundColor: 'blue',display:'flex',justifyContent:'center',alignItems:'center', width: '90%', borderRadius: '10px' }}>
                     <Card.Body>
-                      <Card.Title style={{ fontSize: '20px',color:'white',paddingBottom:'20px', fontFamily: 'fantasy' }}>item</Card.Title>
-                      <Card.Text style={{ fontSize: '20px',color:'white', fontFamily: 'fantasy' }}>{products.length}</Card.Text>
+                      <Card.Title 
+                        style={{ fontSize: '20px',color:'white',paddingBottom:'20px', fontFamily: 'fantasy' }}>item</Card.Title>
+                      <Card.Text 
+                        style={{ fontSize: '20px',color:'white', fontFamily: 'fantasy' }}>{products.length}</Card.Text>
                     </Card.Body>
                   </Card>
-                  <Card style={{ height: '15rem', backgroundColor: 'red', display:'flex',justifyContent:'center',alignItems:'center', width: '90%', borderRadius: '10px' }}>
+                  <Card 
+                      style={{ height: '15rem', backgroundColor: 'red', display:'flex',justifyContent:'center',alignItems:'center', width: '90%', borderRadius: '10px' }}>
                     <Card.Body>
-                      <Card.Title style={{ fontSize: '20px',color:'white',paddingBottom:'20px', fontFamily: 'fantasy' }}>quantity </Card.Title>
-                      <Card.Text style={{ fontSize: '20px',color:'white', fontFamily: 'fantasy' }}>{calculateTotalQuantity()}</Card.Text>
+                      <Card.Title 
+                        style={{ fontSize: '20px',color:'white',paddingBottom:'20px', fontFamily: 'fantasy' }}>quantity </Card.Title>
+                      <Card.Text 
+                        style={{ fontSize: '20px',color:'white', fontFamily: 'fantasy' }}>{calculateTotalQuantity()}</Card.Text>
                     </Card.Body>
                   </Card>
-                  <Card style={{ height: '15rem', backgroundColor: 'green', display:'flex',justifyContent:'center',alignItems:'center',width: '90%', borderRadius: '10px' }}>
+                  <Card 
+                      style={{ height: '15rem', backgroundColor: 'green', display:'flex',justifyContent:'center',alignItems:'center',width: '90%', borderRadius: '10px' }}>
                     <Card.Body>
-                      <Card.Title style={{ fontSize: '20px',color:'white',paddingBottom:'20px', fontFamily: 'fantasy' }}>price </Card.Title>
-                      <Card.Text style={{ fontSize: '20px',color:'white', fontFamily: 'fantasy' }}>${calculateTotalPrice()}</Card.Text>
+                      <Card.Title 
+                        style={{ fontSize: '20px',color:'white',paddingBottom:'20px', fontFamily: 'fantasy' }}>price </Card.Title>
+                      <Card.Text 
+                        style={{ fontSize: '20px',color:'white', fontFamily: 'fantasy' }}>${calculateTotalPrice()}</Card.Text>
                     </Card.Body>
                   </Card>
                 </div>
-                </Col>
-                <Col>
+                
               <table className='containdiv'>
                   <thead>
                     <tr>
@@ -109,6 +152,7 @@ export default function RemoveProduct() {
                       <th>Action</th>
                       <th>Delete-Item</th>
                       <th>Total Amount</th>
+                      <th>Available Product</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -119,19 +163,34 @@ export default function RemoveProduct() {
                         <td>${product.productPrice}</td>
                         <td>{product.productQuantity}</td>
                         <td>
-                          <button style={{background:'transparent',fontSize:'20px',margin :'2px',padding :'1px 3px 1px 3px'}} onClick={() => handleAdjustProduct(product.id, 'increase')}>+</button>
-                          <button style={{background:'transparent',fontSize:'20px',margin :'2px',padding :'1px 3px 1px 3px'}} onClick={() => handleAdjustProduct(product.id, 'decrease')}>-</button>
+                          <button 
+                          style={{margin :'2px',padding :'1px 3px 1px 3px'}} 
+                          onClick={() => handleAdjustProduct(product.id, 'increase')}>+</button>
+                          <button 
+                          style={{margin :'2px',padding :'1px 3px 1px 3px'}} 
+                          onClick={() => handleAdjustProduct(product.id, 'decrease')}>-</button>
                         </td>
                         <td>
-                        <button style={{border:'1px solid black',fontSize:'10px', fontFamily:'fantasy',padding:'10px',borderRadius :'5px'}} onClick={() => handleDeleteProduct(product.id)}>Delete</button>
+                          <button 
+                          style={{border:'1px solid black',fontSize:'10px', fontFamily:'fantasy',padding:'10px',borderRadius :'5px'}} 
+                          onClick={() => handleDeleteProduct(product.id)}>Delete</button>
                         </td>
                         <td>${calculateTotalPrice()}</td>
+                        <td>
+                          <button
+                            style={{ border: '1px solid black', fontSize: '10px', fontFamily: 'fantasy', padding: '10px', borderRadius: '5px' }}
+                            onClick={() => checkProductAvailability(product.id)}
+                          >
+                            Available
+                          </button>
+                        </td>
                       </tr>
                     ))}
                   </tbody>
               </table>
-              </Col>
+             
            </div>
+           </Col>
      </Row>
      <Row>
                     <Col>
@@ -153,6 +212,7 @@ export default function RemoveProduct() {
                             <div className="web">
                               <img className="facebook" src={FACEBOOK} alt=""/>
                               <img  className="whatsapp" src={WHATSAPP} alt=""/>
+                              <img  className="whatsapp" src={TWITTER} alt=""/>
                             </div>
                           </div>
                           </div>

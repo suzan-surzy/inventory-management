@@ -5,9 +5,10 @@ import { useNavigate } from "react-router-dom";
 import { Form } from "react-bootstrap";
 import './addproduct.css'
 import USERICON from '../image/user icon.png'
-import FACEBOOK from '../image/facebook.png'
-import WHATSAPP from '../image/whatsapp.jfif'
+import FACEBOOK from '../image/facebook1.svg'
+import WHATSAPP from '../image/whatsapp1.svg'
 import HUMBURGER from '../image/humburger.png'
+import TWITTER from '../image/twitter1.svg'
 
 
 export default function Addproduct() {
@@ -112,10 +113,10 @@ setNewItem({
                             <input type="number" className="formcontrol" name="productPrice" value={newItem.productPrice} onChange={handleInputChange} required />
                             </label>
                             <br/>
-                            <button  style={{padding:'10px',margin:'10px 5px 10px 5px'}} type="button" onClick={handleAddProduct}>
+                            <button className="addbtn" type="button" onClick={handleAddProduct}>
                                 Add
                             </button>
-                            <button style={{padding:'10px',margin:'10px 5px 10px 5px'}} type="submit" onClick={saveProductsToLocal}>Save to Local Storage</button>
+                            <button className="addbtn" type="submit" onClick={saveProductsToLocal}>Save to Local Storage</button>
                         </Form>
 
                         
@@ -166,6 +167,7 @@ setNewItem({
                      <div className="web">
                       <img className="facebook" src={FACEBOOK} alt=""/>
                       <img  className="whatsapp" src={WHATSAPP} alt=""/>
+                      <img  className="whatsapp" src={TWITTER} alt=""/>
                      </div>
                    </div>
                   </div>

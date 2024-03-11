@@ -6,8 +6,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import USERICON from '../image/user icon.png'
 import HUMBURGER from '../image/humburger.png'
-import FACEBOOK from '../image/facebook.png'
-import WHATSAPP from '../image/whatsapp.jfif'
+import FACEBOOK from '../image/facebook1.svg'
+import WHATSAPP from '../image/whatsapp1.svg'
+import TWITTER from '../image/twitter1.svg'
 
 
 export default function Signin() {
@@ -118,6 +119,7 @@ export default function Signin() {
                      <div className="web">
                       <img className="facebook" src={FACEBOOK} alt=""/>
                       <img  className="whatsapp" src={WHATSAPP} alt=""/>
+                      <img  className="whatsapp" src={TWITTER} alt=""/>
                      </div>
                    </div>
                   </div>

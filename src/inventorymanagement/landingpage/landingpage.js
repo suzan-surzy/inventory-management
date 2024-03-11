@@ -5,9 +5,10 @@ import LOGO from '../image/inventoryimage.webp'
 import { Link } from "react-router-dom";
 import USERICON from '../image/user icon.png'
 import INVENTORY from '../image/downloadinventory.jfif'
-import FACEBOOK from '../image/facebook.png'
-import WHATSAPP from '../image/whatsapp.jfif'
+import FACEBOOK from '../image/facebook1.svg'
+import WHATSAPP from '../image/whatsapp1.svg'
 import HUMBURGER from '../image/humburger.png'
+import TWITTER from '../image/twitter1.svg'
 
 
 export default function LandingPage() {
@@ -20,10 +21,11 @@ export default function LandingPage() {
         <> 
          <Container fluid>
           <Row>
-           
           <nav>
             <h1 className="kidologo">kido inventory</h1>
-            <div className="menu-toggle"  onClick={toggleMenu}><img style={{height:'4rem'}} src={HUMBURGER} alt=""/></div>
+            <div className="menu-toggle"  onClick={toggleMenu}>
+              <img style={{height:'4rem'}} src={HUMBURGER} alt=""/>
+            </div>
             <ul className={`nav-list ${showMenu ? 'show' : ''}`}>
                 <li><Link to="/" >Home</Link></li>
                 <li><Link to="/addproduct" >Add product</Link></li>
@@ -37,18 +39,9 @@ export default function LandingPage() {
         </nav>
            <div className="inventory">
               <h2 className="paragraph">The world is your marketplace,Manage and fillful orders on a go.</h2>
+              <p>Find out the volume of items that are shipped in and out from each of your warehouse. Get more insights into each item's sales in simple steps.</p>
             </div>
            <Col/>
-           </Row>
-           <Row>
-           <Col>
-              <div className="goodsrecord">
-              <p className="inventoryparagraph">Keep constant record of your goods and
-               providing availability of goods,to enhance worderful services to the buyer.
-                </p>
-                <img className="inventoryimage" src={INVENTORY} alt=""/>
-              </div>
-            </Col>
            </Row>
            <Row>
              <Col>
@@ -60,6 +53,17 @@ export default function LandingPage() {
                </Col>
                
            </Row>
+           <Row>
+           <Col>
+              <div className="goodsrecord">
+              <p className="inventoryparagraph">Keep constant record of your goods and
+               providing availability of goods,to enhance worderful services to the buyer.
+                </p>
+                <img className="inventoryimage" src={INVENTORY} alt=""/>
+              </div>
+            </Col>
+           </Row>
+           
            <Row>
              <Col>
                 <footer>
@@ -80,6 +84,7 @@ export default function LandingPage() {
                      <div className="web">
                       <img className="facebook" src={FACEBOOK} alt=""/>
                       <img  className="whatsapp" src={WHATSAPP} alt=""/>
+                      <img  className="whatsapp" src={TWITTER} alt=""/>
                      </div>
                    </div>
                   </div>

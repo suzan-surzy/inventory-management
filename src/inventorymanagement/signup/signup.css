@@ -32,7 +32,7 @@
     margin-top: 20px;
     border: 1px solid black;
     border-radius: 5px;
-    height: 44rem;
+    height: 42rem;
     background: rgba(196, 218, 255, 0.866);
 }
 .signupheader{
@@ -41,9 +41,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 label{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
     margin-top: 10px;
-    font-size: larger;
     display: flex;
     flex-direction: column;
 }
@@ -56,13 +57,17 @@ label{
     height: 30px;
     background: white;
 }
+.submit:hover{
+   color: firebrick;
+}
 .submit{
     text-decoration: none;
     padding: 10px;
     width: 50%;
     background: wheat;
-    font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
     border-radius: 5px;
 }
 .signuplink{
@@ -102,7 +107,7 @@ label{
         justify-content: center;
         align-items: center; 
         padding: 40px;
-        height: 40rem;
+        height: 42rem;
     }
     .formdetail{
         display: flex;
@@ -110,9 +115,33 @@ label{
         padding: 30px;
         border: 1px solid black;
         border-radius: 5px;
-        height: 38rem;
+        height: 40rem;
         width: 100%;
         margin-top: 20px;
         background: rgba(196, 218, 255, 0.866);
     }
+}
+@media(min-width:265px) and (max-width:466px){
+    .container{
+        max-width: 540px;
+     }
+     .detail{
+         display: flex;
+         flex-direction: column; 
+         justify-content: center;
+         align-items: center; 
+         padding: 40px;
+         height: 45rem;
+     }
+     .formdetail{
+         display: flex;
+         flex-direction: column;
+         padding: 30px;
+         border: 1px solid black;
+         border-radius: 5px;
+         height: 43rem;
+         width: 100%;
+         margin-top: 20px;
+         background: rgba(196, 218, 255, 0.866);
+     }
 }

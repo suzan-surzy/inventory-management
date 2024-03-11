@@ -37,21 +37,33 @@
     border-radius: 10px;
     width: 40%;
     margin-top: 60px;
+    font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-style: normal;
     height: 25rem;
     background: bisque;
 }
 .signindata{
     margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.btnsubmit:hover{
+    background-color: black;
+    color: white;
 }
 .btnsubmit{
     background: transparent;
     border-radius: 8px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
     font-size: large;
     padding: 10px;
 }
 
-@media(max-width:710px) and (min-width:347px) {
+@media(max-width:710px) and (min-width:467px) {
     .container{
        max-width: 540px;
     }
@@ -72,4 +84,27 @@
         height: 25rem;
         background: bisque;
     }
-}    
+}
+
+@media(min-width:265px) and (max-width:466px){
+    .container{
+        max-width: 540px;
+     }
+     .formdiv{
+         display: flex;
+         /* flex-direction: column;  */
+         justify-content: center;
+         align-items: center; 
+         background: white;
+         height: 28rem;
+     }
+     .fillform{
+         display: flex;
+         flex-direction: column;
+         border-radius: 10px;
+         width: 80%;
+         margin-top: 60px;
+         height: 25rem;
+         background: bisque;
+     }
+}
